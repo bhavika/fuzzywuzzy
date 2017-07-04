@@ -10,20 +10,20 @@ class StringProcessor
 
       def replace_non_letters_non_numbers_with_whitespaces(a_string: String): String =
       {
-          return regex.replaceAllIn(a_string, " ")
+          regex.replaceAllIn(a_string, " ")
       }
 
-      def strip (str:String) =
+      def strip (str:String) : String =
       {
-          str.stripPrefix(" ").stripSuffix(" ")
+          str.trim()
       }
 
-      def to_lower_case(str: String) =
+      def to_lower_case(str: String) : String =
       {
           str.toLowerCase()
       }
 
-      def to_upper_case(str: String) =
+      def to_upper_case(str: String) : String =
       {
           str.toUpperCase()
       }
