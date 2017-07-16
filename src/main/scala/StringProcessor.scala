@@ -4,9 +4,9 @@
   strings for both input and output.
 **/
 
-class StringProcessor
+object StringProcessor
 {
-      val regex = """[ ](?=[ ])|[^-_,A-Za-z0-9 ]+""".r
+      var regex = """[ ](?=[ ])|[^-_,A-Za-z0-9 ]+""".r
 
       def replace_non_letters_non_numbers_with_whitespaces(a_string: String): String =
       {
